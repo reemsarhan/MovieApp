@@ -1,4 +1,4 @@
-# Movie App
+<!-- # Movie App
 
 Welcome to the **Movie App**, a web application that allows you to explore movies and TV shows from the IMDb database. With this app, you can search for any movie or TV show, add it to your favorites, and manage your favorites list by removing individual items or clearing the entire list.
 
@@ -58,4 +58,4 @@ To run the app locally, follow these steps:
 
 ## Deployment
 
-The app is deployed and can be accessed at https://movie-app-omega-virid.vercel.app/
+The app is deployed and can be accessed at https://movie-app-omega-virid.vercel.app/ -->
