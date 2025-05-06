@@ -40,9 +40,40 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 - **CI/CD & Deployment**  
   Deployed on **Vercel** with **CI/CD** integration for automatic updates via GitHub.
 
+## 🛠️ Tech Stack
+
+- **Next.js**: A React framework for building server-rendered applications.
+- **Bun**: A fast all-in-one JavaScript runtime used as the package manager and runtime for this project.
+- **OMDB API**: For fetching movie and TV show data.
+- **Vercel**: For deployment and CI/CD integration.
+- **GitHub**: For version control and repository hosting.
+- **next-themes**: For managing theme switching (dark/light modes).
+- **SCSS**: For styling, making it modular, maintainable, and scalable.
+- **React Icons**: For beautiful and consistent iconography.
+- **Zustand**: For state management in React.
+  
 ## 📁 Project Structure
 
 <p align="center">
   <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/diagram-export-5-6-2025-8_58_00-PM.png?raw=true" alt="Project Structure" width="800"/>
 </p>
+
+## ⚙️ Prerequisites
+Before getting started, make sure you have the following installed on your system:
+1. **Node.js**  
+   Download it from the official [Node.js website](https://nodejs.org/).
+2. **npm** (Node Package Manager)  
+   **npm** comes bundled with **Node.js**. Ensure you have the latest version of **npm** installed by running:
+   ```bash
+   npm install -g npm
+   ```
+3. **bun**
+  Bun is a fast all-in-one JavaScript runtime used as the package manager and runtime for this project.
+  You can install Bun by running:
+   ```
+   curl -fsSL https://bun.sh/install | bash
+   bun --version
+   ```
+   
+
 
