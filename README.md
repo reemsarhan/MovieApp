@@ -4,28 +4,28 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 
 ## 🚀 Features
 
-- ** Search Movies and TV Shows**  
+- Search Movies and TV Shows**  
   Search any movie or TV show using data fetched from the **OMDB API**.
-- **❤️ Favorites Management (with Zustand)**  
+- Favorites Management (with Zustand)**  
   - Add or remove movies and TV shows from your favorites list.  
   - Clear the entire favorites list with one click.  
 
-- **📱 Responsive UI with Burger Menu**  
+- Responsive UI with Burger Menu**  
   Fully responsive design with a mobile-friendly **burger menu** for intuitive navigation.
 
-- **🎨 Dark and Light Modes**  
+- Dark and Light Modes**  
   Seamless theme switching using **next-themes**, giving users control over their preferred look.
 
-- **💅 Styled with SCSS**  
+- Styled with SCSS**  
   Custom styles are crafted using **SCSS** for modular, maintainable, and scalable styling.
 
-- **💾 Aliased Imports**  
+- Aliased Imports**  
   Clean and simplified import paths using **Next.js alias configuration** (`@/components`, `@/styles`, etc.).
 
-- **🎨 React Icons**  
+-  React Icons**  
   Beautiful and consistent iconography using the **React Icons** library.
 
-- **📄 Pagination**  
+-  Pagination**  
   Displays a limited number of results per page to improve readability and UX.
 
 - **🧠 Conditional Rendering**  
