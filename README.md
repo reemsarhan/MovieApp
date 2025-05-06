@@ -84,7 +84,7 @@ To run the app locally, follow these steps:
 2. **Clone the Repository**  
    Clone the project repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/movie-app.git
+   git clone https://github.com/your-username/MovieApp.git
    cd movie-app
    ```
 3. **Install Dependencies**
@@ -104,5 +104,29 @@ Copy the localhost URL provided in the terminal (e.g., http://localhost:3000). P
 
 The app is deployed and can be accessed live at the following URL:
 
-**[Movie App - Live Demo](url)**
+**[Movie App - Live Demo](https://movie-app-henna-sigma.vercel.app/)**  
+  ### https://movie-app-henna-sigma.vercel.app/
+<p align="center">
+  <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/deployment.png" width="400"/>
+</p>
 
+
+## Some UI from the website
+### 🌗 Light and Dark Mode Views
+
+Below are screenshots of the MovieApp interface in both light and dark modes, showcasing responsive layout and theming:
+
+<p align="center">
+  <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/light%20mode.png" alt="Light Mode" width="48%"/>
+  <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/full%20screen.png" alt="Dark Mode" width="48%"/>
+</p>
+
+---
+
+###  Responsive Navigation (Hamburger Menu)
+
+On smaller screens, the navigation bar collapses into a hamburger menu for a cleaner mobile-friendly layout:
+
+<p align="center">
+  <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/hamburger.png" alt="Hamburger Menu" width="40%"/>
+</p>

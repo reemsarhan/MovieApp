@@ -9,6 +9,11 @@ const ClearFavoritesButton: React.FC<ClearFavoritesButtonProps> = ({
   clearFavorites,
 }) => {
   const handleClick = () => {
+    const confirmed = window.confirm(
+      "Are you sure you want to clear all favorites?"
+    );
+    if (!confirmed) return;
+
     const list = document.querySelector(`.${styles.favoritesList}`);
     if (list) {
       list.classList.add(styles.clearList);
