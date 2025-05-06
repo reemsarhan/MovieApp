@@ -39,3 +39,9 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 
 - **CI/CD & Deployment**  
   Deployed on **Vercel** with **CI/CD** integration for automatic updates via GitHub.
+
+- **Server-Side Rendering (SSR)**  
+  Uses **Next.js SSR** to improve performance and SEO.
+
+- **CI/CD & Deployment**  
+  Deployed on **Vercel** with **CI/CD** integration for automatic updates via GitHub.
