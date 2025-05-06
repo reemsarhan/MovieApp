@@ -39,3 +39,10 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 
 - **CI/CD & Deployment**  
   Deployed on **Vercel** with **CI/CD** integration for automatic updates via GitHub.
+
+## 📁 Project Structure
+
+<p align="center">
+  <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/diagram-export-5-6-2025-8_58_00-PM.png?raw=true" alt="Project Structure" width="400"/>
+</p>
+
