@@ -104,8 +104,8 @@ Copy the localhost URL provided in the terminal (e.g., http://localhost:3000). P
 
 The app is deployed and can be accessed live at the following URL:
 
-**[Movie App - Live Demo](https://movie-app-henna-sigma.vercel.app/)**  
-  ### https://movie-app-henna-sigma.vercel.app/
+**[Movie App - Live Demo](https://movie-app-plum-rho.vercel.app/)**  
+  ### https://movie-app-plum-rho.vercel.app/
 <p align="center">
   <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/deployment.png" width="400"/>
 </p>
