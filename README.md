@@ -74,6 +74,29 @@ Before getting started, make sure you have the following installed on your syste
    curl -fsSL https://bun.sh/install | bash
    bun --version
    ```
-   
+## 🖥️ How to Run the App Locally
 
+To run the app locally, follow these steps:
+
+1. **Install Bun**  
+   If you don't have **Bun** installed, you can install it by following the instructions on the official [Bun website](https://bun.sh/).
+
+2. **Clone the Repository**  
+   Clone the project repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/movie-app.git
+   cd movie-app
+   ```
+3. **Install Dependencies**
+Install the required dependencies using Bun:
+```
+bun install
+```
+Run the App
+Start the development server:
+```
+bun dev
+```
+Open the App
+Copy the localhost URL provided in the terminal (e.g., http://localhost:3000). Paste it into your browser's address bar and press Enter
 
