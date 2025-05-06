@@ -293,16 +293,43 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .navLinks {
-    display: none; /* Hide links on mobile */
+    display: none;
   }
 
   .hamburger {
-    display: flex; /* Show hamburger on mobile */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
   }
 
-  .menuDropdown {
-    display: block; /* Show dropdown when hamburger menu is clicked */
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(236, 10, 236);
+    transition: all 0.3s ease;
   }
+  .barOpen {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+  .menuDropdown {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    background-color: rgb(36, 35, 36);
+    color: white;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    align-items: flex-start; /* Align items to the left */
+    position: absolute;
+    left: 0; /* Align it to the left edge */
+    width: 200px; /* Set a fixed width */
+  }
+  
+
 }
 
 /* Slide-in animation for header */
