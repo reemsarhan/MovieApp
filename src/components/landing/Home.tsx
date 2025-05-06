@@ -36,7 +36,8 @@ export default function Home({initialMovies,initialTotalResults,}: {initialMovie
   };
 
   return (
-    <div className={`${styles.container} ${isDarkMode ? styles.dark : styles.light}`}>
+    <div className={`${styles.container} ${isDarkMode ? styles.dark : styles.light}`} 
+    style={{ minHeight: "100vh", minWidth: "100vw" }}>
       <nav className={styles.navBar}>
         <div className={styles.navLinks}>
           <Link href="/" className={styles.navLink}>
