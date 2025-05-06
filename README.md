@@ -100,3 +100,12 @@ bun dev
 Open the App
 Copy the localhost URL provided in the terminal (e.g., http://localhost:3000). Paste it into your browser's address bar and press Enter
 
+## 🚀 Deployment
+
+The app is deployed and can be accessed live at the following URL:
+
+**[Movie App - Live Demo](url)**
+
+
+
+
