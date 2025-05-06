@@ -12,8 +12,6 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
   - Add or remove movies and TV shows from your favorites list.  
   - Clear the entire favorites list with one click.  
   - Favorites are **persisted in localStorage**, so they remain saved even after page reloads.  
-  - Powered by **Zustand** – a small, fast, and flexible state management library for React.  
-    _“Zustand” means “state” or “condition” in German, reflecting its simplicity and efficiency._
 
 - **Responsive UI with Burger Menu**  
   Fully responsive design with a mobile-friendly **burger menu** for intuitive navigation.
