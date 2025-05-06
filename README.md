@@ -10,9 +10,6 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 - **Favorites Management (with Zustand)**  
   - Add or remove movies and TV shows from your favorites list.  
   - Clear the entire favorites list with one click.  
-  - Powered by **Zustand** – a small, fast, and flexible state management library for React.  
-    _“Zustand” means “state” or “condition” in German, reflecting its simplicity and efficiency._
-
 - **Responsive UI with Burger Menu**  
   Fully responsive design with a mobile-friendly **burger menu** for intuitive navigation.
 
