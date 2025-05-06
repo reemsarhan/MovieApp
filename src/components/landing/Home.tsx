@@ -84,7 +84,7 @@ import { useState } from "react";
 import { getDefaultMovies } from "@/services/movie";
 import MovieCard from "@/components/movieCard/MovieCard";
 import Search from "@/components/search/Search";
-import styles from "@/components/landing/page.module.scss";
+import styles from "@/components/landing/page.module.css";
 import { Notification } from "@/components/movieDetails/Notifications";
 import Link from "next/link";
 
