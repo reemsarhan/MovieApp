@@ -106,6 +106,3 @@ The app is deployed and can be accessed live at the following URL:
 
 **[Movie App - Live Demo](url)**
 
-
-
-
