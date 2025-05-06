@@ -45,7 +45,6 @@ export default function Home({initialMovies,initialTotalResults,}: {initialMovie
           <Link href="/favourites" className={styles.navLink}>
             Favorites
           </Link>
-          
         </div>
 
         {/* Hamburger Menu Icon */}
