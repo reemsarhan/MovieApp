@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "@/components/search/Search.module.css";
+import styles from "@/components/search/Search.module.scss";
 import Image from "next/image";
 import { Movie } from "@/types/movie";
 import { FaSearch } from "react-icons/fa";
@@ -78,22 +78,15 @@ const Search = ({ searchResults, updateChangeResults }: SearchProps) => {
               <p>{searchError}</p>
             ) : searchResults.length > 0 ? (
               searchResults.map((movie) => (
-                <Link
-                  key={movie.imdbID}
-                  href={`/movie-details/${movie.imdbID}`}
-                >
+                <Link key={movie.imdbID} href={`/movie-details/${movie.imdbID}`} >
                   <div className={styles.movieCard}>
-                    <Image
-                      width={200}
-                      height={300}
+                    <Image width={200} height={300}
                       src={
                         movie.Poster === "N/A"
                           ? "/movies/placeholder.jpg"
                           : movie.Poster
                       }
-                      alt={movie.Title}
-                      className={styles.poster}
-                    />
+                      alt={movie.Title} className={styles.poster} />
                     <div className={styles.movieInfo}>
                       <h3>{movie.Title}</h3>
                       <p>Year: {movie.Year}</p>

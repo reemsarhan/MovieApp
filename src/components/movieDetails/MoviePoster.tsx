@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/components/movieDetails/movie.details.page.module.css";
+import styles from "@/components/movieDetails/movie.details.page.module.scss";
 import { Movie } from "@/types/movie";
 export default function MoviePoster({
   movie,

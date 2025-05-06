@@ -1,3 +1,6 @@
+//Custom Fetch: This function wraps the native fetch with additional features 
+// like cache control and handling both server-side and client-side requests.
+
 export async function customFetch<T>({
   url,
   cacheTag,

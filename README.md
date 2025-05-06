@@ -59,3 +59,5 @@ To run the app locally, follow these steps:
 ## Deployment
 
 The app is deployed and can be accessed at https://movie-app-omega-virid.vercel.app/ -->
+
+ 

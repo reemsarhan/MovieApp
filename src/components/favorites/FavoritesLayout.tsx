@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "@/components/favorites/favourite.module.css";
+import styles from "@/components/favorites/favourite.module.scss";
 import ClearFavoritesButton from "@/components/favorites/ClearFavoriteButton";
 import FavoritesList from "@/components/favorites/FavoritesList";
 import { useFavoritesStore } from "@/store/useStore";
@@ -20,7 +20,8 @@ const FavoritesLayout = () => {
       </nav>
 
       <h1 className={styles.pageTitle}>Favourite Movies</h1>
-      {favorites.length > 0 ? (
+      {
+      favorites.length > 0 ? (
         <>
           <ClearFavoritesButton clearFavorites={clearFavorites} />
           <FavoritesList
@@ -32,7 +33,8 @@ const FavoritesLayout = () => {
         <p className={styles.noFavoritesMessage}>
           No favourite movies added yet.
         </p>
-      )}
+      )
+      }
     </div>
   );
 };

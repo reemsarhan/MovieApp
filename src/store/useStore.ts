@@ -1,3 +1,6 @@
+//zustand store (useFavoritesStore) to manage a list of favorite movies in a web application.
+//It leverages localStorage for persistent data storage on the client-side, allowing the favorites list to persist even after the user reloads the page or closes the browser. 
+
 import { create } from "zustand";
 
 interface Movie {

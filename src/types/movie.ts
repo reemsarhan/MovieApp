@@ -1,3 +1,7 @@
+// defines the types and interfaces used in the MovieApp application.
+// Movie interface represents the structure of a movie object.
+// MovieProps interface is used to define the props expected by components that display movie information.
+
 export interface Movie {
   Title: string;
   Year: string;

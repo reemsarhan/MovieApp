@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "@/components/movieCard/MovieCard";
-import styles from "@/components/favorites/favourite.module.css";
+import styles from "@/components/favorites/favourite.module.scss";
 
 interface FavoritesListProps {
   favorites: {
@@ -11,19 +11,18 @@ interface FavoritesListProps {
   removeFavorite: (id: string) => void;
 }
 
-const FavoritesList: React.FC<FavoritesListProps> = ({
-  favorites,
-  removeFavorite,
-}) => (
+const FavoritesList: React.FC<FavoritesListProps> = ({favorites,removeFavorite,}) => (
   <div className={styles.favoritesList}>
-    {favorites.map((movie) => (
+    {
+    favorites.map((movie) => (
       <MovieCard
         key={movie.imdbID}
         movie={movie}
         showRemoveButton={true}
         onToggleFavorite={() => removeFavorite(movie.imdbID)}
       />
-    ))}
+    ))
+    }
   </div>
 );
 

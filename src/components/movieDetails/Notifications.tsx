@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { useFavoritesStore } from "../../store/useStore";
-import styles from "@/styles/Notification.module.css";
+import styles from "@/styles/Notification.module.scss";
 
 export function Notification() {
   const { notification, setNotification } = useFavoritesStore();

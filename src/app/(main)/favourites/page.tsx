@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import FavoritesLayout from "@/components/favorites/FavoritesLayout";
-import LoadingSpinner from "@/components/common/LoadingSpinner";
+import LoadingSpinner from "@/components/load/LoadingSpinner";
 
 export default function FavoritesPage() {
   return (

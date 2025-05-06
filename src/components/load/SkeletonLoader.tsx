@@ -1,4 +1,7 @@
-import styles from "@/components/common/SkeletonLoader.module.css";
+// is used to show a skeleton screen — 
+// a visual placeholder that mimics the layout of content while the real data is being loaded.
+
+import styles from "@/components/load/SkeletonLoader.module.scss";
 
 export default function SkeletonLoader() {
   return (

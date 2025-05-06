@@ -1,0 +1,381 @@
+/* General Styles */
+.container {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(236, 10, 236); /* Accent color for headings */
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #ccc; /* Light gray for text */
+}
+
+/* NavBar Styles */
+.navBar {
+  display: flex;
+  justify-content: space-between; /* Aligns links to the left and theme toggle to the right */
+  padding: 10px;
+  background-color: #333;
+  margin-bottom: 20px;
+  position: relative; /* Needed for positioning hamburger */
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for color */
+}
+
+/* Ensure hover styles are applied */
+.navBar .navLink:hover {
+  background-color: #555;
+  color: rgb(236, 10, 236);
+}
+
+/* Dark and Light Mode */
+.dark .navLink:hover {
+  background-color: #555;
+  color: rgb(236, 10, 236);
+}
+
+.light .navLink:hover {
+  background-color: #555;
+  color: rgb(236, 10, 236);
+}
+
+.themeToggleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.themeToggle:hover {
+  transform: scale(1.1);
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.barOpen {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+.barOpen:nth-child(2) {
+  opacity: 0;
+}
+
+.barOpen:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Menu Dropdown Styles */
+.menuDropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownLink {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownLink:hover {
+  background-color: #555;
+  color: rgb(236, 10, 236);
+}
+
+/* Dark and Light Mode */
+.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.light .navBar {
+  background-color: #eee;
+}
+
+.dark .navBar {
+  background-color: #222;
+}
+
+.dark .navLink {
+  color: white;
+}
+
+.light .navLink {
+  color: black;
+}
+
+.dark .themeToggle {
+  color: #fff;
+}
+
+.light .themeToggle {
+  color: #000;
+}
+
+/* Skeleton Loading Styles */
+.skeletonCard {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.skeletonPoster {
+  width: 200px;
+  height: 300px;
+  background-color: #333; /* Darker gray for skeleton */
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+.skeletonTitle {
+  width: 80%;
+  height: 20px;
+  background-color: #333; /* Darker gray for skeleton */
+  margin: 10px auto;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* Spinner Styles */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #390a54; /* Accent color for spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Load More Button Styles */
+.loadMoreButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #390a54; /* Accent color for button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: rgb(236, 10, 236); /* Slightly darker on hover */
+}
+
+.loadMoreButton:active {
+  transform: scale(0.98); /* Slight scale effect on click */
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Movie List Styles */
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 4px;
+  background-color: #222; /* Dark background for input */
+  color: #fff; /* White text */
+}
+
+.searchInput::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navLinks {
+    display: none; /* Hide links on mobile */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .menuDropdown {
+    display: block; /* Show dropdown when hamburger menu is clicked */
+  }
+}
+
+/* Add animations to the whole body */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Slide-in animation for header */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container h1 {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Bounce effect on buttons */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.loadMoreButton {
+  animation: bounce 1s infinite;
+}
+
+/* Hover animations for links */
+.navLink:hover {
+  transform: scale(1.1);
+  background-color: #555;
+  color: rgb(236, 10, 236);
+  transition: all 0.3s ease;
+}
+
+/* Text reveal effect for headings */
+@keyframes revealText {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.container h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: revealText 2s ease-out forwards;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}

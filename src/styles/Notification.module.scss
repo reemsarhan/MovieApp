@@ -13,24 +13,24 @@
   line-height: 1.4;
   animation: slideIn 0.4s ease-out, fadeOut 0.5s ease-in 4s forwards;
   transition: opacity 0.3s ease;
-}
 
-/* Animation: Slide in */
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
+  // Slide in animation
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-/* Optional fade-out after a few seconds */
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    transform: translateX(100%);
+  // Fade out animation after a few seconds
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateX(100%);
+    }
   }
 }

@@ -1,4 +1,4 @@
-import styles from "./movie.details.page.module.css";
+import styles from "./movie.details.page.module.scss";
 import { Movie } from "@/types/movie";
 
 interface MovieDetailsProps {

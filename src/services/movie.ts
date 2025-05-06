@@ -1,6 +1,9 @@
+//fetch movies from the OMDB API
+//using server side rendering 
+     //for faster data fetching 
+     // Avoids exposing the API key to the browser (which would be insecure).
 // lib/movie.ts
 "use server";
-
 import { customFetch } from "@/helpers/custom-fetch";
 
 export const getDefaultMovies = async (page: number = 1) => {

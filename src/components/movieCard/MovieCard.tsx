@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import styles from "@/components/movieCard/MovieCard.module.css";
+import styles from "@/components/movieCard/MovieCard.module.scss";
 import { useFavoritesStore } from "../../store/useStore";
 
 interface MovieCardProps {

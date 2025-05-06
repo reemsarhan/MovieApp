@@ -9,7 +9,7 @@ import MoviePoster from "@/components/movieDetails/MoviePoster";
 import MovieMetadata from "@/components/movieDetails/MovieMetadata";
 import MovieRatings from "@/components/movieDetails/MovieRatings";
 import MoviePlot from "@/components/movieDetails/MoviePlot";
-import styles from "@/components/movieDetails/movie.details.page.module.css";
+import styles from "@/components/movieDetails/movie.details.page.module.scss";
 import React from "react";
 import { Movie } from "@/types/movie";
 interface MovieDetailsProps {
@@ -17,7 +17,9 @@ interface MovieDetailsProps {
 }
 
 export default function MovieDetails({ movie }: MovieDetailsProps) {
-  const [isBouncing, setIsBouncing] = useState(false); // State for bouncy animation
+  const [isBouncing, setIsBouncing] = useState(false); //controls whether a bouncy animation is triggered when a movie is added to favorites.
+
+
   const [showNotification, setShowNotification] = useState(false);
 
   // Zustand store for favorites
