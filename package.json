@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "bun next dev",
+    "build": "bun next build",
+    "start": "bun next start"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.75.4",
     "@types/lodash.debounce": "^4.0.9",
     "lodash.debounce": "^4.0.8",
     "next": "^15.3.1",
@@ -28,10 +28,5 @@
     "eslint-config-next": "15.1.4",
     "sass": "^1.87.0",
     "typescript": "^5"
-  },
-  "scripts": {
-    "dev": "bun next dev",
-    "build": "bun next build",
-    "start": "bun next start"
   }
 }
