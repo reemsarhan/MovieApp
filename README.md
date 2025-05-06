@@ -4,9 +4,8 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 
 ## 🚀 Features
 
-- **🔍 Search Movies and TV Shows**  
+- ** Search Movies and TV Shows**  
   Search any movie or TV show using data fetched from the **OMDB API**.
-
 - **❤️ Favorites Management (with Zustand)**  
   - Add or remove movies and TV shows from your favorites list.  
   - Clear the entire favorites list with one click.  
