@@ -5,6 +5,12 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
  
 ## 🚀 Features
 
+- **Dynamic Routing for Movie Details Pages**  
+  Each movie has its own dedicated page using **Next.js dynamic routing**, enabling easy navigation and displaying detailed information for each movie.
+
+- **Custom Fetch Wrapper**  
+  A custom **fetch wrapper** around the native `fetch()` API is designed to be more powerful and flexible, handling both **server-side** and **client-side** fetches efficiently in Next.js applications.
+  
 - **Search Movies and TV Shows**  
   Search any movie or TV show using data fetched from the **OMDB API**.
 
