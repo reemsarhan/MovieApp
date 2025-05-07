@@ -17,6 +17,9 @@ interface FavoritesStore {
   isFavorite: (imdbID: string) => boolean;
   notification: string | null;
   setNotification: (message: string | null) => void;
+    //dark mode state
+    isDarkMode: boolean;
+    toggleDarkMode: () => void;
 }
 
 // Helper function to check if localStorage is available
@@ -74,4 +77,10 @@ export const useFavoritesStore = create<FavoritesStore>((set, get) => ({
     get().favorites.some((movie) => movie.imdbID === imdbID),
   notification: null,
   setNotification: (message) => set({ notification: message }),
+    // Dark mode logic
+    isDarkMode: true,
+    toggleDarkMode: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
+
 }));
+
+

@@ -262,3 +262,23 @@
     opacity: 1;
   }
 }
+.container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark {
+  .backButton {
+    color: #be5bc0;
+  }
+}

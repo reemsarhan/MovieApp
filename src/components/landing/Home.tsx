@@ -6,6 +6,7 @@ import MovieCard from "@/components/movieCard/MovieCard";
 import Search from "@/components/search/Search";
 import styles from "@/components/landing/page.module.css";
 import { Notification } from "@/components/movieDetails/Notifications";
+import { useFavoritesStore } from "@/store/useStore";
 import Link from "next/link";
 
 import { Movie } from "@/types/movie";
@@ -15,8 +16,11 @@ export default function Home({initialMovies,initialTotalResults,}: {initialMovie
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [searchResults, setSearchResults] = useState<Movie[]>([]);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // const [isDarkMode, setIsDarkMode] = useState(true);
+  const { isDarkMode, toggleDarkMode } = useFavoritesStore();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
 
   const loadMoreMovies = async () => {
     setLoading(true);
@@ -57,9 +61,13 @@ export default function Home({initialMovies,initialTotalResults,}: {initialMovie
 
         {/* Theme Toggle Button */}
         <div className={styles.themeToggleContainer}>
-          <button onClick={() => setIsDarkMode((prev) => !prev)} className={styles.themeToggle}>
+          {/* <button onClick={() => setIsDarkMode((prev) => !prev)} className={styles.themeToggle}>
             {isDarkMode ? "☀️" : "🌙"}
-          </button>
+          </button> */}
+          <button onClick={toggleDarkMode} className={styles.themeToggle}>
+           {isDarkMode ? "☀️" : "🌙"}
+        </button>
+
         </div>
       </nav>
 

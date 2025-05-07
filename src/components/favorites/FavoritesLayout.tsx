@@ -10,7 +10,8 @@ import Link from "next/link";
 const FavoritesLayout = () => {
   const { favorites, removeFavorite, clearFavorites } = useFavoritesStore();
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // const [isDarkMode, setIsDarkMode] = useState(true);
+  const { isDarkMode, toggleDarkMode } = useFavoritesStore();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -38,9 +39,13 @@ const FavoritesLayout = () => {
         </div>
   
         <div className={styles.themeToggleContainer}>
-          <button onClick={() => setIsDarkMode((prev) => !prev)} className={styles.themeToggle}>
+          {/* <button onClick={() => setIsDarkMode((prev) => !prev)} className={styles.themeToggle}>
             {isDarkMode ? "☀️" : "🌙"}
-          </button>
+          </button> */}
+          <button onClick={toggleDarkMode} className={styles.themeToggle}>
+           {isDarkMode ? "☀️" : "🌙"}
+           </button>
+
         </div>
       </nav>
   

@@ -23,7 +23,10 @@ export default function MovieDetails({ movie }: MovieDetailsProps) {
   const [showNotification, setShowNotification] = useState(false);
 
   // Zustand store for favorites
-  const { addFavorite, removeFavorite, isFavorite } = useFavoritesStore();
+  // const { addFavorite, removeFavorite, isFavorite } = useFavoritesStore();
+  const { addFavorite, removeFavorite, isFavorite, isDarkMode } = useFavoritesStore();
+
+  
 
   // Toggle favorite
   const handleToggleFavorite = (e: React.MouseEvent) => {
@@ -56,7 +59,8 @@ export default function MovieDetails({ movie }: MovieDetailsProps) {
   }
 
   return (
-    <div className={styles.container}>
+    <div
+    className={`${styles.container} ${isDarkMode ? styles.dark : styles.light}`}>
       {/* Notification */}
       {showNotification && <Notification />}
 
